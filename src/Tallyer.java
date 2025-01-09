@@ -91,7 +91,7 @@ public class Tallyer {
       Map<String, Integer> topicCount = new HashMap<>();
       Map<String, Integer> newIds = new HashMap<>();
       
-      for(id : ids)
+      for(String id : ids)
       {
         if(!newIds.containsKey(id))
         {
@@ -106,7 +106,7 @@ public class Tallyer {
 
       }
 
-      for(id : newIds)
+      for(String id : newIds)
       {
         if(!newIds.get(id) < 3)
         {
