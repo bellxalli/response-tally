@@ -106,13 +106,14 @@ public class Tallyer {
 
       }
 
-      for(String id : newIds)
+      for(String id : newIds.keySet())
       {
         if(!newIds.get(id) < 3)
         {
             newIds.remove(id);
         }
       }
+      
       
       for(String topic : topics)
       {
@@ -129,6 +130,6 @@ public class Tallyer {
           }
       }
         
-        return null;
+        return topicCount;
   }
 }
